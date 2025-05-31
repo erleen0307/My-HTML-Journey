@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> FORM </title>
+    </head>
+    <body>
+        <header>
+            <h2> REGISTRATION FORM </h2>
+        </header>
+
+        <main>
+            <form action="/action.php" method="post">
+
+                <!-- Full Name -->
+                <label for="name"> FULL NAME:-  </label>
+                <input type="text" id="name" name="fullname"> <br> <br>
+
+                <!-- Email Address -->
+                <label for="emailid"> EMAIL ID:-  </label>
+                <input type="email" id="emailid" name="email"> <br> <br>
+
+                <!-- Gender(Radio Buttons) -->
+                <p> GENDER:- </p>
+                <input type="radio" id="female" name="gender">
+                <label for="female"> Female </label> <br>
+
+                <input type="radio" id="male" name="gender">
+                <label for="male"> Male </label> <br>
+
+                <input type="radio" id="other" name="gender">
+                <label for="other"> Other </label> <br> <br>
+
+                <!-- Country(Dropdown) -->
+                <label for="country"> COUNTRY:- </label>
+                <select id="country" name="country">
+                    <option value="India"> India </option>
+                    <option value="USA"> USA </option>
+                    <option value="UK"> UK </option>
+                </select>
+                <br> <br>
+
+                <!-- Hobbies(Checkboxes) -->
+                <p> HOBBIES:-  </p>
+                <input type="checkbox" id="reading" name="hobby[]">
+                <label for="reading"> Reading </label>
+                <br>
+                <input type="checkbox" id="dancing" name="hobby[]">
+                <label for="dancing"> Dancing </label>
+                <br>
+                <input type="checkbox" id="gaming" name="hobby[]">
+                <label for="gaming"> Gaming </label>
+                <br>
+
+                <!-- About(Textarea) -->
+                <p> About Yourself:-  </p>
+                <textarea rows="6" cols="12"></textarea>
+                <br> <br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="SUBMIT">
+
+                <!-- Clear Button -->
+                <input type="reset" value="CLEAR">
+
+            </form>
+        </main>
+    </body>
+</html>

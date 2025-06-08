@@ -1,0 +1,366 @@
+/* Global- All pages */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+/* Restaurant Name */
+.rest_label{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    color:white;
+    font-size: 3rem;
+}
+
+.rest_name{
+    transition: all 0.5s 0s ease-in-out;
+}
+
+.rest_name:hover{
+    font-size: 3.3rem;
+}
+
+/* Navbar */
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #A50104;
+    color: cornsilk;
+    font-size: 2.25rem;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.navbar a {
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 2.25rem;
+    transition: all 0.3s 0s ease-in-out;
+}
+
+.navbar a:hover {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+/*Homepage Hero Section */
+.hero_section{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("hero_sect.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #111111;
+}
+
+.tagline{
+    height: 100px;
+    width:60%;
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family:"Edu VIC WA NT Hand";
+    font-weight: 500;
+    padding-left: 100px;
+}
+
+/* Contact Form BG Image */
+.contact_us_bg{
+    background-color: #111111;
+    background-image: url("foodbg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Us Form */
+.contact_heading{
+  font-size: 3rem;
+  color: #A50104;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.contact_heading:hover{
+    font-size: 3.2rem;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 600px;
+  width: 60%;
+  border-radius: 7%;
+  background-color: #f3a8129b;
+}
+
+form{
+    text-align: center;
+}
+
+label, input{
+    margin: 10px;
+    color:#A50104;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+}
+
+.name, .email_id, .subject, .submit{
+    display: block;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.msg label {
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.msg textarea {
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+button{
+    margin-top: 15px;
+    background-color: #e5e2d3;
+    color: #A50104;
+    font-weight: 450;
+    height: 30px;
+    width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_form {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* About Us Bg Image */
+.about_us_bg{
+    background-color: #111111;
+    background-image: url("rest_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* About Us Heading*/
+.about_heading{
+    background-color: #a50104c3;
+    color:#222222;
+    text-align: center;
+    font-size: clamp(2rem,2.7rem,3rem);
+    height: 70px;
+    width: 35%;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: all 0.4s 0s ease-in-out;
+}
+
+.about_heading:hover{
+    font-size: clamp(2.4rem,3rem,3.2rem);
+}
+
+/* About us Para */
+article{
+    background-color: #a50104a5;
+    color: cornsilk;
+    font-family: "Poppins";
+    font-size: clamp(0.7rem,1rem,1.2rem);
+    align-self: flex-start;
+    height: auto;
+    width:40%;
+    margin-left: 45px;
+    text-align: center;
+    padding: 5px;
+    transition: all 0.3s 0s ease-in-out;
+}
+
+article:hover{
+    font-size: clamp(0.9rem,1.2rem,1.5rem);
+    height: auto;
+    width: 50%;
+}
+
+/* Pictures and transitions */
+.rest1_pic{
+    background-image: url("rest1.jpg");
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+.rest2_pic{
+    background-image: url("rest2.jpg");
+    margin-right: 250px;
+    margin-top: 450px;
+}
+
+.rest1_pic, .rest2_pic{
+    background-color: #111111;
+    background-size: cover;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    align-self: flex-end;
+    border: 1.5px solid #222222;
+    border-radius: 2%;
+    transition: all 1s 0s ease-in-out;
+}
+
+.rest1_pic:hover, .rest2_pic:hover{
+    transform: rotate(120deg);
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .about_heading {
+    width: 80%;
+  }
+
+  p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .rest1_pic, .rest2_pic {
+    display: none; /* optional for mobile */
+  }
+}
+
+/* Menu Section Bg */
+.menu_section{
+    height: 1000px;
+    background: linear-gradient(60deg,cornsilk, rgba(241, 192, 101, 0.918));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu heading */
+.menu_heading{
+    font-family: 'Poppins';
+    font-size: clamp(2.4rem,3rem,3.3rem);
+    color: #A50104;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    transition: all 0.3s 0s ease-in-out;
+}
+
+.menu_heading:hover{
+    font-size: clamp(2.7rem,3.4rem,3.7rem);
+}
+
+/* MENU */
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+.americano, .donuts, .noodles, .salad, .ice_cream, .pizza{
+    height: 300px;
+    width: 300px;
+    color:#A50104;
+    font-weight: 600;
+    background-size: cover;
+    background-color: #111111;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    margin: 15px;
+}
+
+.americano{
+    background-image: url("americano.jpg");
+}
+
+.pizza{
+    background-image: url("pizza.jpg");
+}
+
+
+.donuts{
+    background-image: url("donut.jpg");
+}
+
+
+.ice_cream{
+    background-image: url("ice_cream.jpg");
+}
+
+
+.noodles{
+    background-image: url("noodles.jpg");
+}
+
+.salad{
+    background-image: url("salad.jpg");
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #222222;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+footer li{
+    margin-bottom: 4px;
+}

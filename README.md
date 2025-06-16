@@ -31,4 +31,5 @@ In this project, I primarily used:
 - forEach() method
 - Event listeners
 - if-else conditional blocks
+
 Through this project, I’ve started to understand how to integrate JavaScript into HTML and CSS websites to add interactivity and functionality

@@ -1,0 +1,129 @@
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #B6276F;
+}
+
+body{
+    background: linear-gradient(45deg, #b6276fa8, #fc62af88);
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+/* Main Container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Winner Message */
+.msg {
+    display: none;
+    font-size: 2.5rem;
+    margin: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Div */
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: auto; 
+    width: auto;
+    margin: 20px auto;
+}
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px #ffc0beb4;
+    border-radius: 1rem;
+    border: none;
+    margin: 10px;
+    font-size: 3.2rem;
+    font-weight: 400;
+    transition: all 0.3s 0s ease;
+}
+
+.box:disabled {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Winner animation */
+.box.winner {
+  background-color: #f8d7da;
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+
+/* Buttons */
+.resetGame, .newGame{
+    background-color: #ffc0beb4;
+    color: #B6276F;
+    height: 40px;
+    width: 170px;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 15px;
+    border: none;
+}
+
+/* Hovering for Active boxes */
+.box:not(:disabled):hover {
+  background-color: #fff0f5;
+  transform: scale(1.05);
+}
+
+/* Box pointer enabled */
+.box, .resetGame, .newGame {
+    cursor: pointer;
+}
+
+/* Box pointer disabled */
+.box:disabled {
+  cursor: not-allowed;
+}
+
+.msg.show{
+    display: block;
+}
+
+/* Media Responsiveness */
+@media (max-width: 500px) {
+    .box {
+        height: 70px;
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .msg {
+        font-size: 2rem;
+    }
+
+    .resetGame, .newGame {
+        font-size: 1.2rem;
+        width: 140px;
+    }
+}

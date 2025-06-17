@@ -49,8 +49,6 @@ Through this project, I’ve started to understand how to integrate JavaScript i
 ### 🎮 Project 5: Tic Tac Toe Game
 A simple **Tic Tac Toe** game made with **HTML, CSS, and JavaScript**. Built to practice DOM manipulation, game logic, and user interaction.
 
-## 🔗 [Live Demo](https://erleen0307.github.io/My-HTML-Journey/)
-
 What I Learned:-
 - DOM methods like `querySelector`, `addEventListener`
 - Working with arrays and win condition logic

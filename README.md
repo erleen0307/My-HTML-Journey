@@ -83,6 +83,7 @@ A clean and interactive To-Do list app built using **JavaScript Classes** (OOP),
 ---
 
 ### 🧩 Project 7: Tailwind UI Cards
+📅 Date Completed: **June 27, 2025**
 - 📁 `/tailwind-cards/`
 - A collection of mini UI components built using Tailwind CSS.
 - Includes: a basic card and a pricing card.
